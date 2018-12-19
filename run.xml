@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Default Suite"parallel="methods" thread-count="1"><!-- parallel="methods" :����  thread-count="3"��3�β���  -->
+<suite name="Default Suite" parallel="methods" thread-count="1"><!-- parallel="methods" :运行的是方法  thread-count="3" ：并发运行3次  -->
   <test name="testngg">
     <classes>
-      <class name="com.ajx.LoginTest"><!-- ����.���� -->
+      <class name="com.ajx.LoginTest"><!-- 运行的类 -->
         <methods>
-          <include name="getTest"/><!-- ������ -->
+          <include name="getTest"/><!-- 运行的方法 -->
         </methods>
       </class> <!-- com.ajx.LoginTest -->
     </classes>
